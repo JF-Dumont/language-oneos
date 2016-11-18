@@ -1,0 +1,668 @@
+'name': 'OneOS'
+'scopeName': 'source.oneos'
+'fileTypes': ['']
+'foldingStartMarker': '^interface|^router|^ip access-list extended'
+'foldingStopMarker': 'exit'
+'isDisabled': false
+'patterns': [
+  {
+    'include': '#aaa'
+  }
+  {
+    'include': '#aaa-ligne'
+  }
+  {
+    'include': '#acl-extended'
+  }
+  {
+    'include': '#acl-standard'
+  }
+  {
+    'include': '#bba-group'
+  }
+  {
+    'include': '#class-map'
+  }
+  {
+    'include': '#clock'
+  }
+  {
+    'include': '#config-management'
+  }
+  {
+    'include': '#crypto'
+  }
+  {
+    'include': '#crypto-ligne'
+  }
+  {
+    'include': '#disable'
+  }
+  {
+    'include': '#divers-commandes'
+  }
+  {
+    'include': '#dhcp_pool'
+  }
+  {
+    'include': '#enable'
+  }
+  {
+    'include': '#exit'
+  }
+  {
+    'include': '#hostname'
+  }
+  {
+    'include': '#interface'
+  }
+  {
+    'include':'#interface_types'
+  }
+  {
+    'include': '#ip'
+  }
+  {
+    'include': '#ip_address'
+  }
+  {
+    'include': '#l2tp-group'
+  }
+  {
+    'include': '#license'
+  }
+  {
+    'include': '#logging'
+  }
+  {
+    'include': '#policy-map'
+  }
+  {
+    'include': '#protocol'
+  }
+  {
+    'include': '#radius-server'
+  }
+  {
+    'include': '#snmp'
+  }
+  {
+    'include': '#sntp'
+  }
+  {
+    'include': '#sntp-server'
+  }
+  {
+    'include': '#subnet_mask'
+  }
+  {
+    'include': '#virtual-template'
+  }
+  {
+    'include': '#constant.symbol_mask'
+  }
+]
+'repository':
+  'aaa':
+    'patterns': [
+      {
+        'begin': '^(aaa)\\s(group server)\\s(radius|tacacs)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'keyword.other.unit.oneos'
+          '3':
+            'name': 'keyword.other.unit.oneos'
+        'end': 'exit'
+        'endCaptures':
+          '1':
+            'name': 'support.type.oneos'
+        'patterns': [
+          {
+            'match': '(server)\\s'
+            'name': 'support.type.oneos'
+          }
+        ]
+      }
+    ]
+  'aaa-ligne':
+    'patterns': [
+      {
+        'begin': '^(aaa)\\s(authentication|authorization|accounting)'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+          '2':
+            'name': 'support.type.oneos'
+        'end': '$'
+        'patterns': [
+          {
+            'match': '\\s(enable|banner|login|command|exec|default|if-authenticated|Dialer|tacacs+|network|radius)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+        ]
+      }
+   ]
+  'acl-extended':
+    'patterns': [
+      {
+        'begin': '^(ip)\\s(access-list)\\s(extended)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'keyword.other.unit.oneos'
+          '3':
+            'name': 'keyword.other.unit.oneos'
+        'end': 'exit'
+        'patterns': [
+          {
+            'comment': 'To DO : add match witch icmp-type ip protocol-id ...'
+            'begin': '(deny)?(permit)?\\s(tcp|udp|icmp|ip)\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})(?:\\s\\d{0,5})?(?:\\s\\d{0,5})?\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})(?=\\s)'
+            'beginCaptures':
+              '1':
+                'name':'syntax.string.oneos'
+              '2':
+                'name':'variable.oneos'
+              '3':
+                'name':'keyword.other.special-method.oneos'
+              '5':
+                'name':'constant.symbol.oneos'
+              '7':
+                'name':'constant.symbol.oneos'
+            'end': '\\n'
+          }
+        ]
+      }
+   ]
+  'acl-standard':
+    'patterns': [
+      {
+        'begin': '^(ip)\\s(access-list)\\s(standard)(?=\\s)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'keyword.other.unit.oneos'
+          '3':
+            'name': 'keyword.other.unit.oneos'
+        'end': 'exit'
+        'patterns': [
+          {
+            'begin': '(deny)?(permit)?\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})(?=\\s)'
+            'beginCaptures':
+              '1':
+                'name':'syntax.string.oneos'
+              '2':
+                'name':'punctuation.support.class.oneos'
+              '4':
+                'name':'constant.symbol.oneos'
+            'end': '\\n'
+          }
+        ]
+      }
+   ]
+  'bba-group':
+    'patterns': [
+      {
+        'begin': '^(bba-group)\\s(pppoe)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'keyword.other.unit.oneos'
+        'end': 'exit'
+        'patterns': [
+          {
+            'match': '(virtual-template|service-name)\\s'
+            'name': 'support.type.oneos'
+          }
+        ]
+      }
+    ]
+  'class-map':
+    'patterns': [
+      {
+        'begin': '^(class-map)\\s'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+        'end': 'exit'
+        'patterns': [
+	        {
+            'match': '\\s(match|access-group|protocol|protocol-category)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+        ]
+      }
+   ]
+  'clock':
+    'patterns': [
+      {
+        'begin': '^(clock)\\s(timezone|summer-time)'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+          '2':
+            'name': 'support.type.oneos'
+        'end': '$'
+        'patterns': [
+          {
+            'match': '(recurring|CET|last)\\s'
+            'name': 'support.type.oneos'
+          }
+        ]
+      }
+    ]
+  'config-management':
+    'patterns': [
+      {
+        'begin': '^(config-management)\\s'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+        'end': 'exit'
+        'patterns': [
+	        {
+            'match': '\\s(add-separator)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+        ]
+      }
+   ]
+  'crypto':
+    'patterns': [
+      {
+        'begin': '^(crypto)\\s*(isakmp policy|isakmp profile|ipsec transform-set|map ipsec-isakmp)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'keyword.other.unit.oneos'
+        'end': 'exit'
+        'patterns': [
+          {
+            'match': '\\s(esp-md5-hmac|esp-3des|esp-des|esp-aes-192|esp-aes-256|esp-sha-hmac|esp-aes|mode|tunnel|transport|encryption|kilobytes|seconds|lifetime|set|peer|pfs|security-association|type|leased-line|isakmp-profile|transform-set|type|match|address|self-identity|identity)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+          {
+            'match': '\\s(group2|group1|group5)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+          {
+            'include': '#disable'
+          }
+        ]
+      }
+   ]
+  'crypto-ligne':
+    'patterns': [
+      {
+        'begin': '^(crypto)\\s(engine|isakmp key|map)'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+          '2':
+            'name': 'support.type.oneos'
+        'end': '$'
+        'patterns': [
+          {
+            'match': '\\s(ipsecsecret|address)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+          {
+            'include': '#enable'
+          }
+        ]
+      }
+   ]
+  'disable':
+    'patterns': [
+      {
+        'match': '\\b(no(?=\\s)|shutdown|deny|disable|stop)'
+        'name': 'syntax.string.oneos'
+      }
+    ]
+  'divers-commandes':
+    'patterns': [
+      {
+        'match': '\\b(configure|terminal|reboot|recovery-on-error|set\\s|multiple-conf-sessions|multi-mac-address)\\b'
+        'name': 'support.type.oneos'
+      }
+    ]
+  'dhcp_pool':
+    'patterns': [
+      {
+        'begin': '^(ip dhcp pool)\\s'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'support.type.oneos'
+        'end': 'exit'
+        'endCaptures':
+          '1':
+            'name': 'support.type.oneos'
+        'patterns': [
+          {
+            'match': '(network|dns-server|default-router|option|ip|lease|domain-name|range|vrf)\\s'
+            'name': 'support.type.oneos'
+          }
+          {
+            'include': '#mask'
+          }
+        ]
+      }
+    ]
+  'enable':
+    'patterns': [
+      {
+        'match': '\\b(no(?=\\s)|permit|enable|execute)'
+        'name': 'variable.oneos'
+      }
+    ]
+  'exit':
+    'patterns': [
+      {
+        'match': '^(exit)'
+        'name': 'syntax.keyword.oneos'
+      }
+    ]
+  'hostname':
+    'patterns': [
+      {
+        'begin': '^(hostname)'
+        'captures':
+          '1':
+            'name': 'support.type.oneos'
+        'end': '.*$'
+      }
+    ]
+  'interface':
+    'patterns': [
+      {
+        'begin': '(interface)\\s*(dialer|GigabitEthernet|Loopback|l2tunnel|tunnel|fastEthernet|bvi|Bvi|virtual-ethernet)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'keyword.other.unit.oneos'
+        'end': 'exit'
+        'patterns': [
+          {
+            'match': '\\s(pppoe|group|dialer-pool-number|bridge-group|dialer|pool|redirects|dce-terminal-timing-enable|mop|snmp|ppp|multilink|half-duplex|full-duplex|proxy-arp|channel-group|active|mls|qos|switchport|backup|preemption|delay|native|allowed|access|trunk|mode|vlan-id|bandwidth|ipv6|access-group|in|out|verify|unicast|source|destination|reachable-via|tx|rx|dead-interval|hello-interval|flow|policy|route-map|tunnel|rtp|adjust-mss|ingress|cost|allow-default|allow-self-ping|unreachables|lacp|fast-switchover|inside|outside|ip|vrf|forwarding|mtu|address|cdp|enable|encapsulation|speed|duplex|media-type|load-interval|nat|unnumbered|service-module|default-gateway|virtual-reassembly|crypto|map|service-policy|mpls|pim|ospf|rip|clns|negotiation|output|input|dsu|framing|cablelength|crc|clock|down-when-looped|peer|logging|event|trust|neighbor-route|keepalive|description|overload|static-napt|self|dot1Q|bypass-list|ppp-profile|monitor|dpi|protocol-discovery)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+          {
+            'include': '#subnet_mask'
+          }
+          {
+            'include': '#disable'
+          }
+          {
+            'include': '#protocol'
+          }
+        ]
+      }
+   ]
+  'interface_types':
+    'patterns': [
+      {
+        'match': '\\b((Fast|Gigabit|TenGigabit|GigabitEthernet)?Ethernet|l2tunnel|Vlan|Dialer|Serial|Service-Engine|Dot11Radio|ATM|BRI|Tunnel(Group-)?Async|BVI|Loopback|Null|Port-channel|Virtual-(Access|Dot11Radio|PPP|Template))((\\d+[\\.:/])*)?\\d+\\b'
+        'name': 'constant.character.interface.oneos'
+      }
+    ]
+  'ip':
+    'patterns': [
+      {
+        'begin': '^(ip)\\s(name-server|host|ssh|telnet|nat|route|dns-proxy|load-sharing|vrf|dns-server)'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+          '2':
+            'name': 'support.type.oneos'
+        'end': '$'
+        'patterns': [
+          {
+            'match': '\\s(exclude-address|timeout|translation|max-sessions|cache|min-ttl|dns-server|Dialer|least-load-first|per-host|max-session)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+          {
+            'include': '#subnet_mask'
+          }
+          {
+            'include': '#disable'
+          }
+          {
+            'include': '#enable'
+          }
+          {
+            'include': '#protocol'
+          }
+          {
+            'include': '#interface_types'
+          }
+        ]
+      }
+   ]
+  'ip_address':
+    'patterns': [
+      {
+        'match': '\\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(/\\d+)?\\b'
+        #'name': 'constant.numeric.cisco'
+      }
+    ]
+  'l2tp-group':
+    'patterns': [
+      {
+        'begin': '(l2tp-group)\\s'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+        'end': 'exit'
+        'patterns': [
+          {
+            'match':'\\b(l2tp|local|name|tunnel|authentication|password|connection|timeout|initiate-to|ip|sequencing)\\b'
+            'name':'support.type.oneos'
+          }
+          {
+            'begin': '(lac-incoming)'
+            'end':'exit'
+            'beginCaptures':
+             "1":
+              'name':'syntax.keyword.oneos'
+            'patterns': [
+              {
+                'match':'(domain)\\s'
+                'name':'support.type.oneos'
+              }
+            ]
+
+          }
+          {
+            'include': '#disable'
+          }
+
+        ]
+      }
+   ]
+  'license':
+    'patterns': [
+      {
+        'begin': '^(license)\\s(key|activate)'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+          '2':
+            'name': 'support.type.oneos'
+        'end': '$'
+        'patterns': [
+          {
+            'match': '\\s(netcontrol|netapm|add)'
+            'name': 'support.type.oneos'
+          }
+        ]
+      }
+    ]
+  'logging':
+    'patterns': [
+      {
+        'begin': '^(no )?(logging)(?=\\s)'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+          '2':
+            'name': 'support.type.oneos'
+        'end': '$'
+        'patterns': [
+          {
+            'match': '\\s(trap|facility|host|event|link-status|source-interface|buffered|console|debug|size)(?=\\s)'
+            'name': 'support.type.oneos'
+            'comment': 'logging'
+          }
+        ]
+      }
+    ]
+  'policy-map':
+    'patterns': [
+      {
+        'begin': '(policy-map)\\s'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+        'end': 'exit'
+        'patterns': [
+          {
+            'begin': '(class)\\s'
+            'end':'exit'
+            'beginCaptures':
+             "1":
+              'name':'syntax.keyword.oneos'
+            'patterns': [
+              {
+                'match':'(bandwidth|percent|fair-queue|dest-host|shape-average)\\s'
+                'name':'support.type.oneos'
+              }
+            ]
+
+          }
+          {
+            'include': '#subnet_mask'
+          }
+          {
+            'include': '#disable'
+          }
+          {
+            'include': '#protocol'
+          }
+        ]
+      }
+   ]
+  'protocol':
+    'patterns': [
+      {
+        'match': '\\s*(udp|tcp|icmp|bittorrent|edonkey|gnutella|pando)\\b'
+        'name': 'keyword.other.special-method.oneos'
+      }
+    ]
+  'radius-server':
+    'patterns': [
+      {
+        'begin': '^(radius-server)'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+        'end': '$'
+        'patterns': [
+          {
+            'match':'\\s(encrypted)(?=\\s)'
+            'name':'support.type.oneos'
+          }
+        ]
+      }
+    ]
+  'snmp':
+    'patterns': [
+      {
+        'begin': '(no )?(snmp)\\s(set-write-community|set-read-community)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.string.oneos'
+          '2':
+            'name': 'support.type.oneos'
+          '3':
+            'name': 'support.type.oneos'
+        'end': '.*$'
+      }
+    ]
+  'sntp':
+    'patterns': [
+      {
+        'begin': '^(sntp)\\s(server|poll-interval|broadcast)'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+          '2':
+            'name': 'support.type.oneos'
+          '3':
+            'name': 'support.type.oneos'
+        'end': '.*$'
+      }
+    ]
+  'sntp-server':
+    'patterns': [
+      {
+        'begin': '^(sntp-server)\\s(broadcast|client-reference|multicast|unicast|vrf)\\s(source)?'
+        'beginCaptures':
+          '1':
+            'name': 'support.type.oneos'
+          '2':
+            'name': 'support.type.oneos'
+          '3':
+            'name': 'support.type.oneos'
+        'end': '.*$'
+      }
+    ]
+  'subnet_mask':
+    'patterns': [
+      {
+        'match': '\\s255\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}'
+        'name': 'entity.name.function.oneos'
+      }
+    ]
+  'virtual-template':
+    'patterns': [
+      {
+        'begin': '^(virtual-template)\\s(ppp)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'keyword.other.unit.oneos'
+        'end': 'exit'
+        'endCaptures':
+          '1':
+            'name': 'support.type.oneos'
+        'patterns': [
+          {
+            'match': '(ipcp|username|password|keepalive|reconnection|automatic|retry|local|mru|remote|yes)\\s'
+            'name': 'support.type.oneos'
+          }
+          {
+            'include': '#disable'
+          }
+          {
+            'include': '#enable'
+          }
+        ]
+      }
+    ]
+  'constant.symbol_mask':
+    'patterns': [
+      {
+        'match': '\\s0\\.\\d{1,3}\\.\\d{1,3}\\.[0-9][0-9][1-9]?*'
+        'name': 'constant.symbol.oneos'
+        'comment': 'most common constant.symbol masks'
+      }
+    ]
