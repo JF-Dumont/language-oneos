@@ -1,0 +1,19 @@
+{
+  "name": "language-oneos",
+  "version": "0.0.0",
+  "description": "Syntax highlighting to OneAccess routers configuration files in Atom.",
+  "engines": {
+  "atom": "*"
+  },
+  "homepage": "https://github.com/JF-Dumont/language-oneos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JF-Dumont/language-oneos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JF-Dumont/language-oneos/issues"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.10.1"
+  }
+}
