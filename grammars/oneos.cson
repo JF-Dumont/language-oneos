@@ -63,7 +63,7 @@
     'include': '#ip'
   }
   {
-    'include': '#ip_address'
+    'include': '#ip_route'
   }
   {
     'include': '#l2tp-group'
@@ -440,7 +440,7 @@
   'ip':
     'patterns': [
       {
-        'begin': '^(ip)\\s(name-server|host|ssh|telnet|nat|route|dns-proxy|load-sharing|vrf|dns-server)'
+        'begin': '^(ip)\\s(name-server|host|ssh|telnet|nat|dns-proxy|load-sharing|vrf|dns-server)'
         'beginCaptures':
           '1':
             'name': 'support.type.oneos'
@@ -470,11 +470,20 @@
         ]
       }
    ]
-  'ip_address':
+  'ip_route':
     'patterns': [
       {
-        'match': '\\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(/\\d+)?\\b'
-        #'name': 'constant.numeric.cisco'
+        'begin': '^(ip route)( tag)?(\\s\\d{1,4})?\\s?(vrf)?\\s?(TODOvrf-name>)?\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})(?=\\s)'
+        'beginCaptures':
+          '1':
+            'name':'support.type.oneos'
+          '2':
+            'name':'support.type.oneos'
+          '4':
+            'name':'support.type.oneos'
+          '7':
+            'name':'entity.name.function.oneos'
+        'end': '.*$'
       }
     ]
   'l2tp-group':
