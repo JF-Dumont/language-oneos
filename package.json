@@ -1,6 +1,6 @@
 {
   "name": "language-oneos",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Syntax highlighting to OneAccess routers configuration files in Atom. --",
   "keywords": [
     "language",
