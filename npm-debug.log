@@ -1,0 +1,468 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/share/atom/resources/app/apm/bin/node',
+1 verbose cli   '/usr/share/atom/resources/app/apm/node_modules/npm/bin/npm-cli.js',
+1 verbose cli   'version',
+1 verbose cli   'minor',
+1 verbose cli   '-m',
+1 verbose cli   'Prepare %s release' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.5
+4 info git [ 'status', '--porcelain' ]
+5 verbose stack Error: Git working directory not clean.
+5 verbose stack M  grammars/oneos.cson
+5 verbose stack A  node_modules/.bin/coffeelint
+5 verbose stack A  node_modules/coffeelint/.coffeelintignore
+5 verbose stack A  node_modules/coffeelint/.npmignore
+5 verbose stack A  node_modules/coffeelint/3rd_party_rules.md
+5 verbose stack A  node_modules/coffeelint/Cakefile
+5 verbose stack A  node_modules/coffeelint/LICENSE
+5 verbose stack A  node_modules/coffeelint/README.md
+5 verbose stack A  node_modules/coffeelint/bin/.npmignore
+5 verbose stack A  node_modules/coffeelint/bin/coffeelint
+5 verbose stack A  node_modules/coffeelint/doc/integration.md
+5 verbose stack A  node_modules/coffeelint/doc/release.md
+5 verbose stack A  node_modules/coffeelint/doc/user.md
+5 verbose stack A  node_modules/coffeelint/generated_coffeelint.json
+5 verbose stack A  node_modules/coffeelint/lib/.npmignore
+5 verbose stack A  node_modules/coffeelint/lib/cache.js
+5 verbose stack A  node_modules/coffeelint/lib/coffeelint.js
+5 verbose stack A  node_modules/coffeelint/lib/commandline.js
+5 verbose stack A  node_modules/coffeelint/lib/configfinder.js
+5 verbose stack A  node_modules/coffeelint/lib/reporters/checkstyle.js
+5 verbose stack A  node_modules/coffeelint/lib/reporters/csv.js
+5 verbose stack A  node_modules/coffeelint/lib/reporters/default.js
+5 verbose stack A  node_modules/coffeelint/lib/reporters/jslint.js
+5 verbose stack A  node_modules/coffeelint/lib/reporters/raw.js
+5 verbose stack A  node_modules/coffeelint/lib/ruleLoader.js
+5 verbose stack A  node_modules/coffeelint/node_modules/.bin/cake
+5 verbose stack A  node_modules/coffeelint/node_modules/.bin/coffee
+5 verbose stack A  node_modules/coffeelint/node_modules/.bin/strip-json-comments
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/bin/cake
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/bin/coffee
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/browser.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/cake.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/coffee-script.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/command.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/grammar.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/helpers.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/lexer.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/nodes.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/optparse.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/parser.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/register.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/repl.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/rewriter.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/scope.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/sourcemap.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/register.js
+5 verbose stack A  node_modules/coffeelint/node_modules/coffee-script/repl.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/changelog.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/common.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/glob.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/old.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/inflight.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/node_modules/wrappy/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/node_modules/wrappy/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/node_modules/wrappy/wrappy.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/inherits.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/inherits_browser.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/minimatch.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/.npmignore
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/LICENSE.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/.travis.yml
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/README.markdown
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/example/map.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/test/map.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/once/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/once/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/once/node_modules/wrappy/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/once/node_modules/wrappy/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/once/node_modules/wrappy/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/once/once.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/once/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/path-is-absolute/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/path-is-absolute/license
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/path-is-absolute/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/node_modules/path-is-absolute/readme.md
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/glob/sync.js
+5 verbose stack A  node_modules/coffeelint/node_modules/ignore/LICENSE-MIT
+5 verbose stack A  node_modules/coffeelint/node_modules/ignore/README.md
+5 verbose stack A  node_modules/coffeelint/node_modules/ignore/ignore.js
+5 verbose stack A  node_modules/coffeelint/node_modules/ignore/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/.travis.yml
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/bool.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/boolean_double.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/boolean_single.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/default_hash.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/default_singles.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/divide.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/line_count.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/line_count_options.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/line_count_wrap.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/nonopt.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/reflect.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/short.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/string.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/usage-options.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/example/xup.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/.travis.yml
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/example/parse.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/readme.markdown
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/bool.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/dash.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/default_bool.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/dotted.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/long.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/num.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/parse.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/parse_modified.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/short.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/whitespace.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/README.markdown
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/example/center.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/example/meat.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/test/break.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/test/idleness.txt
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/test/wrap.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/readme.markdown
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/_.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/_/argv.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/_/bin.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/dash.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/parse.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/parse_modified.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/short.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/usage.js
+5 verbose stack A  node_modules/coffeelint/node_modules/optimist/test/whitespace.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/.travis.yml
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/LICENSE
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/example/async.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/example/sync.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/lib/async.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/lib/caller.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/lib/core.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/lib/core.json
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/lib/node-modules-paths.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/lib/sync.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/readme.markdown
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/core.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/faulty_basedir.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/filter.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/filter_sync.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/mock.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/mock_sync.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/node_path.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/node_path/x/aaa/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/node_path/x/ccc/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/node_path/y/bbb/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/node_path/y/ccc/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/bar/node_modules/foo/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/baz/doom.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/baz/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/baz/quux.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/biz/node_modules/garply/lib/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/biz/node_modules/garply/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/biz/node_modules/grux/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/biz/node_modules/tiv/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/cup.coffee
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/foo.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/incorrect_main/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/incorrect_main/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/mug.coffee
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/mug.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/other_path/lib/other-lib.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/other_path/root.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/punycode/node_modules/punycode/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/quux/foo/index.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/without_basedir/main.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver/without_basedir/node_modules/mymodule.js
+5 verbose stack A  node_modules/coffeelint/node_modules/resolve/test/resolver_sync.js
+5 verbose stack A  node_modules/coffeelint/node_modules/strip-json-comments/cli.js
+5 verbose stack A  node_modules/coffeelint/node_modules/strip-json-comments/license
+5 verbose stack A  node_modules/coffeelint/node_modules/strip-json-comments/package.json
+5 verbose stack A  node_modules/coffeelint/node_modules/strip-json-comments/readme.md
+5 verbose stack A  node_modules/coffeelint/node_modules/strip-json-comments/strip-json-comments.js
+5 verbose stack A  node_modules/coffeelint/package.json
+5 verbose stack A  node_modules/coffeelint/vowsrunner.js
+5 verbose stack A  npm-debug.log
+5 verbose stack     at /usr/share/atom/resources/app/apm/node_modules/npm/lib/version.js:247:19
+5 verbose stack     at /usr/share/atom/resources/app/apm/node_modules/npm/lib/utils/no-progress-while-running.js:21:8
+5 verbose stack     at ChildProcess.exithandler (child_process.js:204:7)
+5 verbose stack     at emitTwo (events.js:87:13)
+5 verbose stack     at ChildProcess.emit (events.js:172:7)
+5 verbose stack     at maybeClose (internal/child_process.js:827:16)
+5 verbose stack     at Socket.<anonymous> (internal/child_process.js:319:11)
+5 verbose stack     at emitOne (events.js:77:13)
+5 verbose stack     at Socket.emit (events.js:169:7)
+5 verbose stack     at Pipe._onclose (net.js:477:12)
+6 verbose cwd /home/jfd/github/language-oneos
+7 error Linux 4.8.8-200.fc24.x86_64
+8 error argv "/usr/share/atom/resources/app/apm/bin/node" "/usr/share/atom/resources/app/apm/node_modules/npm/bin/npm-cli.js" "version" "minor" "-m" "Prepare %s release"
+9 error node v4.4.5
+10 error npm  v3.10.5
+11 error Git working directory not clean.
+11 error M  grammars/oneos.cson
+11 error A  node_modules/.bin/coffeelint
+11 error A  node_modules/coffeelint/.coffeelintignore
+11 error A  node_modules/coffeelint/.npmignore
+11 error A  node_modules/coffeelint/3rd_party_rules.md
+11 error A  node_modules/coffeelint/Cakefile
+11 error A  node_modules/coffeelint/LICENSE
+11 error A  node_modules/coffeelint/README.md
+11 error A  node_modules/coffeelint/bin/.npmignore
+11 error A  node_modules/coffeelint/bin/coffeelint
+11 error A  node_modules/coffeelint/doc/integration.md
+11 error A  node_modules/coffeelint/doc/release.md
+11 error A  node_modules/coffeelint/doc/user.md
+11 error A  node_modules/coffeelint/generated_coffeelint.json
+11 error A  node_modules/coffeelint/lib/.npmignore
+11 error A  node_modules/coffeelint/lib/cache.js
+11 error A  node_modules/coffeelint/lib/coffeelint.js
+11 error A  node_modules/coffeelint/lib/commandline.js
+11 error A  node_modules/coffeelint/lib/configfinder.js
+11 error A  node_modules/coffeelint/lib/reporters/checkstyle.js
+11 error A  node_modules/coffeelint/lib/reporters/csv.js
+11 error A  node_modules/coffeelint/lib/reporters/default.js
+11 error A  node_modules/coffeelint/lib/reporters/jslint.js
+11 error A  node_modules/coffeelint/lib/reporters/raw.js
+11 error A  node_modules/coffeelint/lib/ruleLoader.js
+11 error A  node_modules/coffeelint/node_modules/.bin/cake
+11 error A  node_modules/coffeelint/node_modules/.bin/coffee
+11 error A  node_modules/coffeelint/node_modules/.bin/strip-json-comments
+11 error A  node_modules/coffeelint/node_modules/coffee-script/LICENSE
+11 error A  node_modules/coffeelint/node_modules/coffee-script/README.md
+11 error A  node_modules/coffeelint/node_modules/coffee-script/bin/cake
+11 error A  node_modules/coffeelint/node_modules/coffee-script/bin/coffee
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/browser.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/cake.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/coffee-script.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/command.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/grammar.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/helpers.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/index.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/lexer.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/nodes.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/optparse.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/parser.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/register.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/repl.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/rewriter.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/scope.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/lib/coffee-script/sourcemap.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/package.json
+11 error A  node_modules/coffeelint/node_modules/coffee-script/register.js
+11 error A  node_modules/coffeelint/node_modules/coffee-script/repl.js
+11 error A  node_modules/coffeelint/node_modules/glob/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/changelog.md
+11 error A  node_modules/coffeelint/node_modules/glob/common.js
+11 error A  node_modules/coffeelint/node_modules/glob/glob.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/index.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/old.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/fs.realpath/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/inflight.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/node_modules/wrappy/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/node_modules/wrappy/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/node_modules/wrappy/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/node_modules/wrappy/wrappy.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inflight/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/inherits.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/inherits_browser.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/inherits/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/minimatch.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/index.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/.npmignore
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/LICENSE.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/index.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/.travis.yml
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/README.markdown
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/example/map.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/index.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/concat-map/test/map.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/minimatch/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/once/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/once/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/once/node_modules/wrappy/LICENSE
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/once/node_modules/wrappy/README.md
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/once/node_modules/wrappy/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/once/node_modules/wrappy/wrappy.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/once/once.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/once/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/path-is-absolute/index.js
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/path-is-absolute/license
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/path-is-absolute/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/node_modules/path-is-absolute/readme.md
+11 error A  node_modules/coffeelint/node_modules/glob/package.json
+11 error A  node_modules/coffeelint/node_modules/glob/sync.js
+11 error A  node_modules/coffeelint/node_modules/ignore/LICENSE-MIT
+11 error A  node_modules/coffeelint/node_modules/ignore/README.md
+11 error A  node_modules/coffeelint/node_modules/ignore/ignore.js
+11 error A  node_modules/coffeelint/node_modules/ignore/package.json
+11 error A  node_modules/coffeelint/node_modules/optimist/.travis.yml
+11 error A  node_modules/coffeelint/node_modules/optimist/LICENSE
+11 error A  node_modules/coffeelint/node_modules/optimist/example/bool.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/boolean_double.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/boolean_single.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/default_hash.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/default_singles.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/divide.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/line_count.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/line_count_options.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/line_count_wrap.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/nonopt.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/reflect.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/short.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/string.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/usage-options.js
+11 error A  node_modules/coffeelint/node_modules/optimist/example/xup.js
+11 error A  node_modules/coffeelint/node_modules/optimist/index.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/.travis.yml
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/LICENSE
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/example/parse.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/index.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/package.json
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/readme.markdown
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/bool.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/dash.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/default_bool.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/dotted.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/long.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/num.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/parse.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/parse_modified.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/short.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/minimist/test/whitespace.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/LICENSE
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/README.markdown
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/example/center.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/example/meat.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/index.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/package.json
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/test/break.js
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/test/idleness.txt
+11 error A  node_modules/coffeelint/node_modules/optimist/node_modules/wordwrap/test/wrap.js
+11 error A  node_modules/coffeelint/node_modules/optimist/package.json
+11 error A  node_modules/coffeelint/node_modules/optimist/readme.markdown
+11 error A  node_modules/coffeelint/node_modules/optimist/test/_.js
+11 error A  node_modules/coffeelint/node_modules/optimist/test/_/argv.js
+11 error A  node_modules/coffeelint/node_modules/optimist/test/_/bin.js
+11 error A  node_modules/coffeelint/node_modules/optimist/test/dash.js
+11 error A  node_modules/coffeelint/node_modules/optimist/test/parse.js
+11 error A  node_modules/coffeelint/node_modules/optimist/test/parse_modified.js
+11 error A  node_modules/coffeelint/node_modules/optimist/test/short.js
+11 error A  node_modules/coffeelint/node_modules/optimist/test/usage.js
+11 error A  node_modules/coffeelint/node_modules/optimist/test/whitespace.js
+11 error A  node_modules/coffeelint/node_modules/resolve/.travis.yml
+11 error A  node_modules/coffeelint/node_modules/resolve/LICENSE
+11 error A  node_modules/coffeelint/node_modules/resolve/example/async.js
+11 error A  node_modules/coffeelint/node_modules/resolve/example/sync.js
+11 error A  node_modules/coffeelint/node_modules/resolve/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/lib/async.js
+11 error A  node_modules/coffeelint/node_modules/resolve/lib/caller.js
+11 error A  node_modules/coffeelint/node_modules/resolve/lib/core.js
+11 error A  node_modules/coffeelint/node_modules/resolve/lib/core.json
+11 error A  node_modules/coffeelint/node_modules/resolve/lib/node-modules-paths.js
+11 error A  node_modules/coffeelint/node_modules/resolve/lib/sync.js
+11 error A  node_modules/coffeelint/node_modules/resolve/package.json
+11 error A  node_modules/coffeelint/node_modules/resolve/readme.markdown
+11 error A  node_modules/coffeelint/node_modules/resolve/test/core.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/faulty_basedir.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/filter.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/filter_sync.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/mock.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/mock_sync.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/node_path.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/node_path/x/aaa/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/node_path/x/ccc/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/node_path/y/bbb/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/node_path/y/ccc/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/bar/node_modules/foo/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/baz/doom.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/baz/package.json
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/baz/quux.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/biz/node_modules/garply/lib/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/biz/node_modules/garply/package.json
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/biz/node_modules/grux/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/biz/node_modules/tiv/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/cup.coffee
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/foo.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/incorrect_main/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/incorrect_main/package.json
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/mug.coffee
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/mug.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/other_path/lib/other-lib.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/other_path/root.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/punycode/node_modules/punycode/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/quux/foo/index.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/without_basedir/main.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver/without_basedir/node_modules/mymodule.js
+11 error A  node_modules/coffeelint/node_modules/resolve/test/resolver_sync.js
+11 error A  node_modules/coffeelint/node_modules/strip-json-comments/cli.js
+11 error A  node_modules/coffeelint/node_modules/strip-json-comments/license
+11 error A  node_modules/coffeelint/node_modules/strip-json-comments/package.json
+11 error A  node_modules/coffeelint/node_modules/strip-json-comments/readme.md
+11 error A  node_modules/coffeelint/node_modules/strip-json-comments/strip-json-comments.js
+11 error A  node_modules/coffeelint/package.json
+11 error A  node_modules/coffeelint/vowsrunner.js
+11 error A  npm-debug.log
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
