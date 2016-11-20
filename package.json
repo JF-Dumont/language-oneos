@@ -8,8 +8,7 @@
     "grammar",
     "oneaccess",
     "oneos"
-  ]
-
+  ],
   "engines": {
     "atom": "*"
   },
