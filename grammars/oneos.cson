@@ -620,7 +620,7 @@
         'end': '$'
         'patterns': [
           {
-            'match':'\\s(encrypted)(?=\\s)'
+            'match':'\\s(encrypted|encrypt)(?=\\s)'
             'name':'support.type.oneos'
           }
         ]
