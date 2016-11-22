@@ -18,6 +18,9 @@
     'include': '#acl-standard'
   }
   {
+    'include': '#auto-update'
+  }
+  {
     'include': '#bba-group'
   }
   {
@@ -49,6 +52,9 @@
   }
   {
     'include': '#exit'
+  }
+  {
+    'include': '#flow'
   }
   {
     'include': '#hostname'
@@ -209,6 +215,62 @@
         ]
       }
    ]
+  'auto-update':
+    'patterns': [
+      {
+        'begin': '^(auto-update)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+        'end': 'exit'
+        'endCaptures':
+          '0':
+            'name': 'syntax.keyword.oneos'
+        'patterns': [
+          {
+            'begin': '(software-update)\\s'
+            'end':'exit'
+            'beginCaptures':
+             "1":
+              'name':'syntax.keyword.oneos'
+            'endCaptures':
+              '0':
+                'name': 'syntax.keyword.oneos'
+            'patterns': [
+              {
+                'include': '#auto-update-keyword'
+              }
+            ]
+          }
+          {
+            'begin': '(tar-resource-update)\\s'
+            'end':'exit'
+            'beginCaptures':
+             "1":
+              'name':'syntax.keyword.oneos'
+            'endCaptures':
+              '0':
+                'name': 'syntax.keyword.oneos'
+            'patterns': [
+              {
+                'include': '#auto-update-keyword'
+              }
+            ]
+          }
+          {
+            'include': '#auto-update-keyword'
+          }
+        ]
+      }
+   ]
+  'auto-update-keyword':
+    'patterns': [
+      {
+        'match': '(stop|trigger|daily-restart-timer|any-update|url|index-url|on\\s|update-success|reboot|target|index|pre-update-action|post-update-action|http-server-disable|http-server-enable)'
+        'name': 'support.type.oneos'
+      }
+    ]
+
   'bba-group':
     'patterns': [
       {
@@ -376,7 +438,7 @@
   'enable':
     'patterns': [
       {
-        'match': '\\b(no(?=\\s)|permit|enable|execute)'
+        'match': '\\b(no(?=\\s)|permit|enable|execute|enabled)'
         'name': 'variable.oneos'
       }
     ]
@@ -387,6 +449,30 @@
         'name': 'syntax.keyword.oneos'
       }
     ]
+  'flow':
+    'patterns': [
+      {
+        'begin': '^(flow)\\s*(exporter|monitor)(?=\\s)'
+        'beginCaptures':
+          '1':
+            'name': 'syntax.keyword.oneos'
+          '2':
+            'name': 'keyword.other.unit.oneos'
+        'end': 'exit'
+        'endCaptures':
+          '0':
+            'name': 'syntax.keyword.oneos'
+        'patterns': [
+          {
+            'match': '(description|reporter-id|destination|transport|option|system-table|timeout|application-table|exporter-stats|interface-table|record|netflow-extended|exporter|statistics|packet|protocol|size)(?=\\s)'
+            'name': 'support.type.oneos'
+          }
+          {
+            'include': '#protocol'
+          }
+        ]
+      }
+   ]
   'hostname':
     'patterns': [
       {
@@ -470,7 +556,7 @@
   'ip_route':
     'patterns': [
       {
-        'begin': '^(ip route)( tag)?(\\s\\d{1,4})?\\s?(vrf)?\\s?(TODOvrf-name>)?\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})(?=\\s)'
+        'begin': '^(ip route)( tag)?(\\s\\d{1,4})?\\s?(vrf)?\\s?(TODOvrf-name>)?\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})\\s(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}|Dialer)(?=\\s)'
         'beginCaptures':
           '1':
             'name':'support.type.oneos'
@@ -480,6 +566,8 @@
             'name':'support.type.oneos'
           '7':
             'name':'entity.name.function.oneos'
+          '8':
+            'name':'variable.oneos'
         'end': '.*$'
       }
     ]
